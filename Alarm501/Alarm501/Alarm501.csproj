@@ -4,12 +4,14 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{44961450-024F-47C2-B663-4DCE760D4998}</ProjectGuid>
+    <ProjectGuid>{4238C267-EDD8-4DF3-8014-3A17468A3DDE}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>LogIn200</RootNamespace>
-    <AssemblyName>LogIn200</AssemblyName>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <RootNamespace>Alarm501</RootNamespace>
+    <AssemblyName>Alarm501</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -44,18 +46,26 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Controller.cs" />
-    <Compile Include="CredentialsM.cs" />
-    <Compile Include="VIew.cs">
+    <Compile Include="Alarm.cs" />
+    <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="VIew.Designer.cs">
-      <DependentUpon>VIew.cs</DependentUpon>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="VIew.resx">
-      <DependentUpon>VIew.cs</DependentUpon>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
