@@ -4,12 +4,14 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{44961450-024F-47C2-B663-4DCE760D4998}</ProjectGuid>
+    <ProjectGuid>{A5CB85B3-EEBE-42E8-AEFC-87882EF7BC10}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>LogIn200</RootNamespace>
-    <AssemblyName>LogIn200</AssemblyName>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <RootNamespace>Login200Lab03pt2</RootNamespace>
+    <AssemblyName>Login200Lab03pt2</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -48,17 +50,14 @@
   <ItemGroup>
     <Compile Include="Controller.cs" />
     <Compile Include="CredentialsM.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="VIew.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="VIew.Designer.cs">
       <DependentUpon>VIew.cs</DependentUpon>
     </Compile>
-    <Compile Include="Program.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="VIew.resx">
-      <DependentUpon>VIew.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -68,6 +67,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="VIew.resx">
+      <DependentUpon>VIew.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
