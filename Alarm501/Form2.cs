@@ -19,6 +19,7 @@ namespace Alarm501
         Alarm alarm;
         List<Alarm> alarmList;
         bool TrueOrFalse = false;
+
         /// <summary>
         /// constructor
         /// </summary>
@@ -37,6 +38,8 @@ namespace Alarm501
             {
                 TrueOrFalse = true;
             }
+            string[] sounds = { "Radar", "Beacon", "Chimes" , "Circuit", "Reflection"};
+            Sounds.Items.AddRange(sounds);
         }
 
         /// <summary>
@@ -47,6 +50,9 @@ namespace Alarm501
         public void setButton_Click(object sender, EventArgs e)
         {
             alarm.getTime = dateTimePicker1.Value;
+            alarm.AlarmSound = Sounds.SelectedItem.ToString();
+            alarm.SnoozeTime = Convert.ToInt32(SnoozeTimeSet.Value);
+
             if (TrueOrFalse == true)
             {
                 alarmList.Remove(alarm);
@@ -56,8 +62,8 @@ namespace Alarm501
             {
                 alarmList.Add(alarm);
             }
-
         }
+
         /// <summary>
         /// Handles when the cancel button is clicked
         /// </summary>
