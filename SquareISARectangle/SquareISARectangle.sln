@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30804.86
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SquareISARectangle", "SquareISARectangle\SquareISARectangle.csproj", "{D152C2A7-AA45-44D2-A12A-D3E4C01018D7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SquareLSP", "SquareLSP\SquareLSP.csproj", "{709A4CC2-2BDF-4EF5-B1A4-9073C19011CC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D152C2A7-AA45-44D2-A12A-D3E4C01018D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D152C2A7-AA45-44D2-A12A-D3E4C01018D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D152C2A7-AA45-44D2-A12A-D3E4C01018D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D152C2A7-AA45-44D2-A12A-D3E4C01018D7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{709A4CC2-2BDF-4EF5-B1A4-9073C19011CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{709A4CC2-2BDF-4EF5-B1A4-9073C19011CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{709A4CC2-2BDF-4EF5-B1A4-9073C19011CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{709A4CC2-2BDF-4EF5-B1A4-9073C19011CC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F15D1E8D-1F45-4C5E-ABF1-E1DBBC97B3CB}
+	EndGlobalSection
+EndGlobal
