@@ -28,13 +28,18 @@ namespace Alarm501
         {
             O = Otemp;
             f = f2;
+            StartTimer();
+        }
+
+
+        private void StartTimer()
+        {
             timer = new System.Timers.Timer(1000);
             timer.Elapsed += CheckAlarms;
             timer.SynchronizingObject = f;
             timer.AutoReset = true;
             timer.Start();
         }
-
 
         /// <summary>
         /// logic for the snooze button
